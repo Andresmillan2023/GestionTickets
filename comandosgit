@@ -1,0 +1,23 @@
+GUIA DE COMANDOS BASICO GIT 
+
+comando 1= add //Sirve para activar y hacer cambio en el stage "archivos, o cambios de codigo"
+comando 2 = rm  //Sirve para Eliminar Algun Archivo
+comando 2.1 = commit -m "COMENTARIO" // sirve para anexar algun comentario de los cambios que se hicieron en archivo
+comando 3 = status -s //Verifica todos los cambios que tengamos pendiente en stage o commit
+comando 3.1 = ls // Sirve para ver los archivos disponibles en el directorio
+comando 3.2 = CD // Sirve para acceder a una ubicacion de una carpeta, se le anexan 1 espacio y 2 puntos seguidos si nos queremos devolver de directorio
+comando 4 = diff
+comando 5 = mv NOMBREACTUAL NOMBRENUEVO // Sirve para cambiar el nombre de algun Archivo
+comando 6 = log --oneline // Sirve para ver detalladamente los cambios en el archivo por rama "usuario"
+comando 7 = restore --staged NOMBREARCHIVO //Sirve para Restaurar una Archivo Eliminado
+comando 8 = branch // Sirve para ver las RAMAS que esten disponibles en el directorio "carpeta", si se quiere ver todas las ramas disponibles se utiliza branch -r
+comando 9 = checkout -b NOMBRE-RAMA // Sirve para crear una rama nueva
+comando 9.1 = checkout -d NOMBRE-RAMA // Sirve para eliminar una Rama Creada
+comando 10 = cat
+comando 10.1 = Clone URL//Sirve para clonar un repositorio pero se debe acceder primero al directorio 
+comando 11 = push -u origin NOMBRE-RAMA // Sirve para enviar los cambios realizados al nube git hub
+
+
+NOTAS IMPORTANTES
+
+1. Se debe clonar el archivo a trabajar y posteriormente ingresar desde git-bash y abrir su ubicacion con la carpeta y lo mismos desde el visual estudio code y finalmente se puede CREAR LA RAMA
