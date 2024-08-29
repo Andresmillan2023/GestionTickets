@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Tickets</title>
+    <link rel="stylesheet" href="css/ListadoTickets.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Listado de Tickets</h1>
+            <form id="ticketsForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="asignado">Asignado a: </label>
+                        <select id="asignado" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option>Diego</option>
+                            <option>Luis</option>
+                            <option>Jorge</option>
+                            <option>Carlos</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="search">Buscar Ticket: </label>
+                        <input type="text" id="search" placeholder="Buscar...">
+                    </div>
+                    <button type="button" class="back-button">Volver al menú</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/creacion de tickets.js"></script>
+</body>
+</html>
