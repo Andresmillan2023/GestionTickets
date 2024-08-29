@@ -7,17 +7,22 @@ comando 3 = status -s //Verifica todos los cambios que tengamos pendiente en sta
 comando 3.1 = ls // Sirve para ver los archivos disponibles en el directorio
 comando 3.2 = CD // Sirve para acceder a una ubicacion de una carpeta, se le anexan 1 espacio y 2 puntos seguidos si nos queremos devolver de directorio
 comando 4 = diff
-comando 5 = mv NOMBREACTUAL NOMBRENUEVO // Sirve para cambiar el nombre de algun Archivo
+comando 4.1 = checkout NOMBRE-RAMA // Sirve para cambiar de rama y trabajar con el directorio disponible de creacion
+comando 5 = mv NOMBREACTUAL NOMBRENUEVO // Sirve para cambiar el nombre de algun Archivo por otro nuevo
 comando 6 = log --oneline // Sirve para ver detalladamente los cambios en el archivo por rama "usuario"
 comando 7 = restore --staged NOMBREARCHIVO //Sirve para Restaurar una Archivo Eliminado
 comando 8 = branch // Sirve para ver las RAMAS que esten disponibles en el directorio "carpeta", si se quiere ver todas las ramas disponibles se utiliza branch -r
 comando 9 = checkout -b NOMBRE-RAMA // Sirve para crear una rama nueva
 comando 9.1 = checkout -d NOMBRE-RAMA // Sirve para eliminar una Rama Creada
-comando 10 = cat
+comando 10 = cat NOMBRE-ARCHIVO.TXT // Sirve para ver el contenido de un archivo
 comando 10.1 = Clone URL//Sirve para clonar un repositorio pero se debe acceder primero al directorio 
 comando 11 = push -u origin NOMBRE-RAMA // Sirve para enviar los cambios realizados al nube git hub
+comando 12 = merge NOMBRE-RAMA-CON-cambios // Se utiliza para traer los cambios de una rama a otra
+comando 13 = pull origin master // sirve  para ver los cambio grandes de un trabajo colaborativo desde la rama ORIGINAL (MASTER)
+
 
 
 NOTAS IMPORTANTES
 
 1. Se debe clonar el archivo a trabajar y posteriormente ingresar desde git-bash y abrir su ubicacion con la carpeta y lo mismos desde el visual estudio code y finalmente se puede CREAR LA RAMA
+2. para hacer algun cambio o llevar un archivo al  menu principal se debe estar en la RAMA En la que se va a generar el cambio y llamar la rama que tiene los cambios dentro para aplicarselos a la principal.
