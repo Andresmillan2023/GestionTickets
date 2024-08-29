@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- Definición del tipo de documento y el lenguaje -->
+<html lang="es">
 <head>
-    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la ventana gráfica para dispositivos móviles -->
-    <title>Listado de Tickets</title> <!-- Título de la página -->
-    <link rel="stylesheet" href="css/ListadoTickets.css"> <!-- Enlace a la hoja de estilos CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Tickets</title>
+    <link rel="stylesheet" href="css/ListadoTickets.css">
 </head>
 <body>
-    <div class="container"> <!-- Contenedor principal -->
-        <div class="form-container"> <!-- Contenedor del formulario -->
-            <h1>Listado de Tickets</h1> <!-- Título del formulario -->
-            <form id="ticketsForm"> <!-- Formulario con un ID específico -->
-                
+    <div class="container">
+        <div class="form-container">
+            <h1>Listado de Tickets</h1>
+            <form id="ticketsForm">
                 <div class="form-row">
-                    <div class="form-group"> <!-- Grupo de formulario para "Asignado a" -->
-                        <label for="asignado">Asignado a: </label> <!-- Etiqueta para el campo "Asignado a" -->
-                        <select id="asignado" required> <!-- Selector desplegable para "Asignado a" -->
-                            <option value="" disabled selected>Selecciona una opción</option> <!-- Opción por defecto -->
-                            <option>Diego</option> <!-- Opción 1 -->
-                            <option>Luis</option> <!-- Opción 2 -->
-                            <option>Jorge</option> <!-- Opción 3 -->
-                            <option>Carlos</option> <!-- Opción 4 -->
-                            <!-- Agregar más opciones según sea necesario -->
+                    <div class="form-group">
+                        <label for="asignado">Asignado a: </label>
+                        <select id="asignado" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option>Diego</option>
+                            <option>Luis</option>
+                            <option>Jorge</option>
+                            <option>Carlos</option>
                         </select>
                     </div>
-                    
-
-                        <button type="button" class="back-button">Volver al menú</button> <!-- Botón para volver al menú -->
-                        
+                    <div class="form-group">
+                        <label for="search">Buscar Ticket: </label>
+                        <input type="text" id="search" placeholder="Buscar...">
                     </div>
+                    <button type="button" class="back-button">Volver al menú</button>
                 </div>
             </form>
         </div>
     </div>
-    <script src="js/creacion de tickets.js"></script> <!-- Enlace al archivo JavaScript -->
+    <script src="js/creacion de tickets.js"></script>
 </body>
 </html>
